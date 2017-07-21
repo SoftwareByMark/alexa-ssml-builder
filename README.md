@@ -4,7 +4,7 @@ A utility for building valid SSML for use with Amazon Web Services [Alexa](https
 
 Amazon Alexa supports a subset of the SSML markup tags as defined by [Speech Synthesis Markup Language (SSML) Version 1.1, W3C Recommendation](https://www.w3.org/TR/2010/REC-speech-synthesis11-20100907/).
 
-Using a [Builder Pattern](https://en.wikipedia.org/wiki/Builder_pattern), the AlexaSsmlBuilder class allows you to programmatically build up a valid SSML string.
+Using a [Builder Pattern](https://en.wikipedia.org/wiki/Builder_pattern), AlexaSsmlBuilder allows you to programmatically build up a valid SSML string.
 
 This is an extension of [PollySsmlBuilder](https://github.com/SoftwareByMark/polly-ssml-builder).
 
@@ -37,7 +37,7 @@ let ssml = alexaSsmlBuilder.speak("Don't tell anyone, but ")
 
 This produces the following String:
 
-```text
+```xml
 <speak>Don't tell anyone, but <amazon:effect name="whispered">I see dead people.</amazon:effect></speak>
 ```
 
